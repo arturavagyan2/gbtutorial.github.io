@@ -1,0 +1,423 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>DS 233 Marketing Analytics</title>
+        <meta name="author" content="Karen Hovhannisyan">
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+        <link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/reveal.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@3.6.0/css/theme/simple.css" id="theme">
+
+        <!-- Code syntax highlighting -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/monokai-sublime.css">
+        
+        <style>
+            p{
+                text-align: justify;
+            }
+
+            h2{
+                /* text-align: left; */
+                font-weight: bold;
+            }
+            #left {
+                margin: 10px 0 15px 20px;
+                text-align: center;
+                float: left;
+                z-index:-10;
+                width:48%;
+                font-size: 0.85em;
+                line-height: 1.5; 
+            }
+
+            #right {
+                margin: 10px 0 15px 0;
+                float: right;
+                text-align: center;
+                z-index:-10;
+                width:48%;
+                font-size: 0.85em;
+                line-height: 1.5; 
+            }
+
+            #box-container {
+                display: flex;
+                text-align: center;
+                }
+
+                #box-1 {
+                /* background-color: dodgerblue; */
+                width: 20%;
+                text-align: center;
+                }
+
+                #box-2 {
+                /* background-color: orangered; */
+                width: 38%;
+                text-align: center;
+                }
+
+                #box-3 {
+                /* background-color: green; */
+                width: 38%;
+                text-align: center;
+                }
+
+        </style>
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+    <div class="reveal">
+
+      <!-- Any section ment inside of this container is displayed as a slide -->
+     <div class="slides">
+
+
+<!-- Slide 1 -->
+<section>
+<h2>Marketing Analytics</h2>
+<br><br>
+<h4>Garo Bozadjian, AUA</h4>
+
+<h4>Github Tutorial</h3>
+</section>
+
+<!-- Slide 2 -->
+<section> 
+    <h2>Objective</h2>
+
+<!-- - Why should you know?
+- Intro to HTML document layout
+- Intro to HTML document components
+- Intro to CSS -->
+<ul>
+    <li>Intro to Github.</li>
+    <li>Install Git and IDE.</li>
+    <li>Create new repository in github.com.</li>
+    <li>Create a token for commiting.</li>
+    <li>Clone the repository,push, pull, and commit your project.</li>
+    <li>Undersanding Git branching and how to use it.</li>
+    <li>How to deal with merge conflicts.</li>
+</ul>
+</section>
+    
+ <!-- Slide  -->
+
+<!-- Slide 3 -->
+<section>
+    <h2> Expected outcome</h2>
+    
+    <p>By the end of the problem solving session, you should be able to:</p>
+
+    <ul>
+        <li>Understand core concepts of github.</li>
+        <li>Feel comfortable with creating git repositry and commit your projects in github.</li>
+        <li>Understand the concepts of Git branching and how to deal with merge conflicts.</li>
+    </ul>
+</section>
+
+<!-- what is github-->
+<section>
+    <!-- Slide 5-->
+    <section><h2>Github</h2> </section>
+    <!-- Slide 6-->
+    <section>
+        <h3>What is Github?</h3>
+        <p>At a high level, GitHub is a website and cloud-based service that helps developers store and manage their code, as well as track and control changes to their code.
+            To understand exactly what GitHub is, you need to know two connected principles: Version control and Git
+        </p>
+    </section>
+
+    <!-- Slide 7-->
+    <section>
+        <h3>What is Version Control?</h3>
+        <p>Version control helps developers track and manage changes to a software project’s code. As a software project grows, version control becomes essential. 
+        </p>
+
+    </section>
+
+    <!-- Slide 8-->
+    <section>
+        <h3>What is Git?</h3>
+        <p>Git is a specific open-source version control system created by Linus Torvalds in 2005. Specifically, Git is a distributed version control system, which means that the entire codebase and history is available on every developer’s computer, which allows for easy branching and merging. 
+        </p>
+
+    </section>
+</section>
+
+<!-- Installing Git-->
+<section>
+    <!-- Slide 9-->
+    <section>
+        <h2>Installing Git</h2>
+     </section>
+     <!-- Slide 10-->
+     <section>
+        <h3>installing git in linux and mac OS?</h3>
+        <p>No need to install it it is pre installed :P, if it is not we will solve it together.</p>                
+    </section>
+     <!-- Slide 11-->
+     <section>
+        <h3>Steps to install git and IDE in windows (1)</h3>
+        <ul>
+            <li>First check if you have git in your Windows system by going to command prompt and write git.</li>
+            <li>If it says git is not recognized then  you have to install git.</li>
+            <li>You will find the download link in the link.txt.</li>
+            <li>When installing keep everything as a default till the end.</li>
+        </ul> 
+    </section>
+    <!-- Slide 12-->
+    <section>
+        <h3>Steps to install git and IDE in windows (2)</h3>
+        <ul>
+            <li>For IDE i recommend VS code for all OS linux/Mac/Windows.</li>
+            <li>You will find the download link in the link.txt.
+            <li>During installing the vscode in the additional tasks window make sure that Add the PATH is checked.</li>
+
+        </ul> 
+    </section>
+</section>
+<!-- Creating a repository -->
+<section>
+    <!-- Slide 13 -->
+    <section>
+        <h2>Creating Repository from Github</h2>
+        
+    </section>
+
+     <!-- Slide 14 -->
+    <section>
+        <h3>Steps to create a repository in github (1)</h3>
+        <div id="left">
+            <img class="plain" src="image/1.png" alt="">
+        </div>
+        <div id="right">
+            <img class="plain" src="image/2.png" alt="">
+        </div>      
+        
+    </section>
+
+    <section>
+        <h3>Steps to create a repository in github (2)</h3>
+        <div id="left">
+            <img class="plain" src="image/3.png" alt="">
+        </div>
+        <div id="right">
+            <img class="plain" src="image/4.png" alt="">
+        </div>      
+        
+    </section>
+
+    <section>
+        <h3>Steps to create a repository in github (3)</h3>
+        <div id="left">
+            <img class="plain" src="image/5.png" alt="">
+        </div>
+        <div id="right">
+            <img class="plain" src="image/6.png" alt="">
+        </div>      
+        
+    </section>
+
+ <!-- Slide 15 -->
+    
+    <section>
+        <h3>Steps to create tokens</h3>
+        <ul>
+            <li>Next to your profile at the top right there is arrow sign click it and click on the settings.</li>
+            <li>On rhe bottom right there is option call Developer Settings</li>
+            <li>In the left sidebar , click on the personal access token</li>
+            <li>Click on the Generate new token</li>
+            <li>Write a description if you want and save the token somepleace sade so you use it in the coming section</li>
+        </ul>
+
+        
+    </section>
+
+</section>
+
+<!-- Dash layout -->
+<section>
+    <!-- Slide 3 -->
+    <section><h2>Clone the repository and commit your project</h2> </section>
+    <!-- Slide 4 -->
+    <section>
+        <h3>How to clone the repository</h3>
+        <ul>
+            <li>Open the vscode, click on the Terminal option at the top, you will find it opened a terminal at the bottom.</li>
+            <li>In your repository click on the button called Code and copy the URL</li>
+            <li>Go back to you IDE and in the terminal write (git clone) and paste the url and press enter.</li>
+            <li>Now you will have the same same repository in your local machine.</li>
+        </ul>
+    </section>
+    <!-- Slide 5 -->
+    <section>
+        <h2>How to push, pull, and commit (1)</h2>
+        <p>Create a py file in the folder wish you just cloned</p>
+        
+        <pre class="python"><code>
+import pandas as pd
+import numpy as mp
+
+print('Hallo world')
+        </code></pre>
+    </section>
+    <!-- Slide 6 -->
+    <section>
+        <h3>How to push, pull, and commit (2)</h3>
+        <ul>
+            <li>After saving the py file you created. In the terminal write ( git status ) to check the status of your repository.</li>
+            <li>Just to make sure you cloned all the files in the repository write ( git pull ) to pull all the files which was in the repository.</li>
+            <li>If it asks for username write the github username and for the password you copy the token that you created and paste it as the password.</li>
+        </ul>
+    </section>
+    <!-- Slide 7 -->
+    <section>
+        <h3>How to push, pull, and commit (3)</h3>
+        <ul>
+            <li>Now we will add the py file we created in the repositary in github by either writing (git add .py) for spesific  file or (git add .) for all files which you created.</li>
+            <li>Now we will commit what we added byt ( git commit -m "description")</li>
+            <li>-m in the git comit is important because it describes what you have added and why so you have to include it always and descripte what you did in that commit.</li>
+        </ul>
+    </section>
+    <!-- Slide 8 -->
+    <section>
+        <h3>How to push, pull, and commit (4)</h3>
+        <ul>
+            <li>After all that you push everyting in your repository in github by writing (git push) in the terminal.</li>
+            <li>now check your repository in your github account and you will find the files that you added.</li>
+        </ul>
+
+        
+    </section>
+</section>
+<!-- Branching -->
+<section>
+    <section><h2>Git Branching</h2> </section>
+    <!-- Slide 10 -->
+    <section>
+        <h3>What is Git Branching</h3>
+        <p>At the start whe you create a repository it will be your master branch.So when you create a new branch it will have all the files that was in the master class but when you change anything in the new branch it will not affect the master branch.</p>
+    </section>
+
+    <!-- Slide 11 -->
+    
+    <Section>
+        <h3>When to use branching?</h3>
+        <p>we will use it when we want to test a new feature but we dont want to it affect the main branch which is master if anything happens. other use is when we want to fix the main(master) brach.</p>
+    </Section>
+    <!-- Slide 12 -->
+
+    <Section>
+        <h3>Types of Branching</h3>
+        <ul>
+            <li>HotFix Branch</li>
+            <li>Feature Branching</li>
+        </ul>
+    </Section>
+    <section>
+        <h3>How Branshes look like</h3>
+        <div id="center">
+            <img class="plain" src="image/7.png" alt="">
+        </div>
+    </section>
+    <!-- Slide 13 -->
+    <Section>
+        <h3>Creating a new branch </h3>
+        <ul>
+            <li>If you want to check which branch you are in in the terminal write (git branch)</li>
+            <li>To create new branch (git checkout -b "name") name is the name of the beanch</li>
+            <li>To switch between branches (git chechout "name") name is the name of the beanch</li>
+            <li>To check the difference between your branches you can do (git diff "name") name is the name of the branch you want to compare it with the brach you are in.</li>
+            <li>To delete a branch (git branch -d "name")</li>
+        </ul>
+        
+    </Section>
+    <!-- slide 14 -->
+    <section>
+        <h3>How to Merge branches</h3>
+        <ul>
+            <li>All you have to do is write (git merge "name") name is the branch you want to merge to.</li>
+            <li>But sometimes it give you conflects.</li>
+            <li>if you have a conflect during merging check your code in the IDE or vscode and it wll show you why there was conflect and change it and try merging again or join everying which is not recommended.</li>
+        </ul>
+    </section>
+</section>
+<section>
+    <h2>Thank you</h2>
+</section>
+<!-- END OF THE PRESENTATION -->
+          </div>
+    </div>
+
+    <script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/head.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/js/reveal.min.js"></script>
+
+    <script>
+     // Full list of configuration options available at:
+     // https://github.com/hakimel/reveal.js#configuration
+     Reveal.initialize({
+       slideNumber:true,
+       controls: true,
+       progress: true,
+       history: true,
+       center: true,
+       transitionSpeed:'slow',
+       previewLinks:true,
+       transition: 'convex', // none/fade/slide/convex/concave/zoom
+       // Optional reveal.js plugins
+       dependencies: [
+     { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/classList.js',
+       condition: function() { return !document.body.classList; } },
+     { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/marked.js',
+       condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+     { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/markdown.js',
+       condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+     { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/highlight/highlight.js',
+       async: true,
+       condition: function() { return !!document.querySelector( 'pre code' ); },
+       callback: function() { hljs.initHighlightingOnLoad(); } },
+     { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/zoom-js/zoom.js', async: true },
+     { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/notes/notes.js', async: true }
+       ]
+     });
+    </script>
+
+    div {
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+  text-align:center;
+}
+</style>
+</head>
+<body>
+
+<h2>Demonstrating the Box Model</h2>
+
+<p>borders; padding; margins; and the actual content.</p>
+
+<div>Some text in Div</div>
+
+</body>
+
+    </body>
+</html>
