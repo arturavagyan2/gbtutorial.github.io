@@ -24,6 +24,12 @@
                 /* text-align: left; */
                 font-weight: bold;
             }
+
+            h3{
+                /* text-align: left; */
+                font-weight: bold;
+            }
+
             #left {
                 margin: 10px 0 15px 20px;
                 text-align: center;
@@ -107,13 +113,13 @@
 - Intro to HTML document components
 - Intro to CSS -->
 <ul>
-    <li>Intro to Github.</li>
-    <li>Install Git and IDE.</li>
-    <li>Create new repository in GitHub</li>
-    <li>Create a token for commiting.</li>
-    <li>Clone the repository,push, pull, and commit your project.</li>
-    <li>Undersanding Git branching and how to use it.</li>
-    <li>How to deal with merge conflicts.</li>
+    <li>Intro to GitHub</li>
+    <li>Install Git and IDE</li>
+    <li>Create a new repository in GitHub</li>
+    <li>Create a token for commit</li>
+    <li>Clone the repository,push, pull, and commit your project</li>
+    <li>Understanding Git branching and how to use it</li>
+    <li>Dealing with merge conflicts</li>
 </ul>
 </section>
     
@@ -123,40 +129,48 @@
 <section>
     <h2> Expected outcome</h2>
     
-    <p>By the end of the problem solving session, you should be able to:</p>
-
-    <ul>
-        <li>Understand core concepts of github.</li>
-        <li>Feel comfortable with creating git repositry and commit your projects in github.</li>
-        <li>Understand the concepts of Git branching and how to deal with merge conflicts.</li>
-    </ul>
+    <p>By the end of the problem-solving session, you should be able to:</p>
+    <br>
+    <small>
+        <ul>
+            <li>Understand core concepts of github.</li>
+            <li>Feel comfortable with creating git repositry and commit your projects in github.</li>
+            <li>Understand the concepts of Git branching and how to deal with merge conflicts.</li>
+        </ul>
+    </small>
 </section>
 
 <!-- what is github-->
 <section>
     <!-- Slide 5-->
-    <section><h2>Github</h2> </section>
+    <section><h2>GitHub</h2> </section>
     <!-- Slide 6-->
     <section>
         <h3>What is Github?</h3>
-        <p>At a high level, GitHub is a website and cloud-based service that helps developers store and manage their code, as well as track and control changes to their code.
-            To understand exactly what GitHub is, you need to know two connected principles: Version control and Git
-        </p>
+         <p>GitHub is a website and cloud-based service that helps developers store and manage their code, as well as track and control changes to their code.</p>
+            
+         <p>To understand exactly what GitHub is, you need to know two connected principles:</p>
+        
+         <ul style="text-align: left;">
+            <li>Version Control</li>
+            <li>Git</li>
+        </ul>
+        
     </section>
 
     <!-- Slide 7-->
     <section>
-        <h3>What is Version Control?</h3>
-        <p>Version control helps developers track and manage changes to a software project’s code. As a software project grows, version control becomes essential. 
-        </p>
+        <h3>Version Control</h3>
+        <p>Version control helps developers track and manage code changes to a software project. As a software project grows, version control becomes essential.</p>
 
     </section>
 
     <!-- Slide 8-->
     <section>
         <h3>What is Git?</h3>
-        <p>Git is a specific open-source version control system created by Linus Torvalds in 2005. Specifically, Git is a distributed version control system, which means that the entire codebase and history is available on every developer’s computer, which allows for easy branching and merging. 
-        </p>
+        <p>Git is a specific open-source version control system created by <i>Linus Torvalds in 2005</i>.</p>
+        <p>Git is a distributed version control system, meaning that the entire codebase and history are available on every developer’s computer, allowing easy branching and merging.</p>
+        
 
     </section>
 </section>
@@ -169,29 +183,33 @@
      </section>
      <!-- Slide 10-->
      <section>
-        <h3>installing git in linux and mac OS?</h3>
-        <p>No need to install it it is pre installed :P, if it is not we will solve it together.</p>                
+        <h3>Installing on Linux, MacOS, Windows</h3>
+        <ul>
+           <li><b>MacOS:</b> there is a need to install <b><a href="https://www.freecodecamp.org/news/install-xcode-command-line-tools/">Xcode Command Line Tools:</a></b> <i>xcode-select --install</i></li>
+           <li><b>Linux:</b> it should be there</li>
+           <li><b>Windows:</b> download git installer from <a href="https://gitforwindows.org/">here</a> and install it with default properties</li>
+        </ul>
+        <br> <br>
+        <small style="text-align: left;">In order to check git is properly installed, just type <i>git</i> in your terminal.</small>
     </section>
+    
+    
      <!-- Slide 11-->
      <section>
-        <h3>Steps to install git and IDE in windows (1)</h3>
-        <ul>
-            <li>First check if you have git in your Windows system by going to command prompt and write git.</li>
-            <li>If it says git is not recognized then  you have to install git.</li>
-            <li>You will find the download link in the link.txt.</li>
-            <li>When installing keep everything as a default till the end.</li>
-        </ul> 
+        <h3>Choosing an IDE</h3>
+        <p>We are recommending for <b>Python</b> to  use <a href="https://code.visualstudio.com/download">VScode</a>, and <a href="https://posit.co/download/rstudio-desktop/">R Studio</a> for <b>R.</b></p>
+         <small>Note, during the VScode installation make sure to add vscode to PATH </small>
     </section>
     <!-- Slide 12-->
-    <section>
-        <h3>Steps to install git and IDE in windows (2)</h3>
+    <!-- <section>
+        <h3>  to install git and IDE in windows (2)</h3>
         <ul>
             <li>For IDE i recommend VS code for all OS linux/Mac/Windows.</li>
             <li>You will find the download link in the link.txt.
             <li>During installing the vscode in the additional tasks window make sure that Add the PATH is checked.</li>
 
         </ul> 
-    </section>
+    </section> -->
 </section>
 <!-- Creating a repository -->
 <section>
