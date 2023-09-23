@@ -309,10 +309,21 @@
     <section><h2>Clone the repository and commit your project</h2> </section>
     <!-- Slide 4 -->
     <section>
-        <h3>How to clone the repository</h3>
+        <h3>How to clone the repository (1)</h3>
         <ul>
-            <li>Open the vscode, click on the Terminal option at the top, you will find it opened a terminal at the bottom.</li>
+            <li>Open the vscode, click on the <b>Terminal</b> option at the top, you will find it opened a terminal at the bottom.</li>
+            <div id="left">
+                <img class="plain"src="image/terminal.png">
+            </div>
+        </ul>
+    </section>
+    <section>
+        <h3>How to clone the repository (2)</h3>
+        <ul>
             <li>In your repository click on the button called Code and copy the URL</li>
+            <div id="left">
+                <img class="plain" src="image/clone.png" alt="">
+            </div>
             <li>Go back to you IDE and in the terminal write (git clone) and paste the url and press enter.</li>
             <li>Now you will have the same same repository in your local machine.</li>
         </ul>
@@ -333,8 +344,18 @@ print('Hallo world')
     <section>
         <h3>How to push, pull, and commit (2)</h3>
         <ul>
-            <li>After saving the py file you created. In the terminal write ( git status ) to check the status of your repository.</li>
-            <li>Just to make sure you cloned all the files in the repository write ( git pull ) to pull all the files which was in the repository.</li>
+            <li>After saving the py file you created. In the terminal write ( <b>git status</b> ) to check the status of your repository.</li>
+            <pre class="python">
+                <code>
+                    git status
+                </code>
+            </pre>
+            <li>Just to make sure you cloned all the files in the repository write ( <b>git pull</b> ) to pull all the files which was in the repository.</li>
+            <pre class="python">
+                <code>
+                    git pull
+                </code>
+            </pre>
             <li>If it asks for username write the github username and for the password you copy the token that you created and paste it as the password.</li>
         </ul>
     </section>
@@ -342,16 +363,32 @@ print('Hallo world')
     <section>
         <h3>How to push, pull, and commit (3)</h3>
         <ul>
-            <li>Now we will add the py file we created in the repositary in github by either writing (git add .py) for spesific  file or (git add .) for all files which you created.</li>
-            <li>Now we will commit what we added byt ( git commit -m "description")</li>
-            <li>-m in the git comit is important because it describes what you have added and why so you have to include it always and descripte what you did in that commit.</li>
+            <li>Now we will add the <b>py</b> file we created in the repositary in github by either writing (<b>git add .py</b>) for spesific  file or (<b>git add .</b>) for all files which you created.</li>
+            <pre class="python">
+                <code>
+                    git add .py
+                    git add .
+                </code>
+            </pre>
+            <li>Now we will commit what we added byt ( <b>commit -m "description"</b> )</li>
+            <pre class="python">
+                <code>
+                    commit -m "description"
+                </code>
+            </pre>
+            <li>-m in the git commit is important because it describes what you have added and why so you have to include it always and descripte what you did in that commit.</li>
         </ul>
     </section>
     <!-- Slide 8 -->
     <section>
         <h3>How to push, pull, and commit (4)</h3>
         <ul>
-            <li>After all that you push everyting in your repository in github by writing (git push) in the terminal.</li>
+            <li>After all that you push everyting in your repository in github by writing (<b>git push</b>) in the terminal.</li>
+            <pre class="python"> 
+                <code>
+                    git push
+                </code>
+            </pre>
             <li>now check your repository in your github account and you will find the files that you added.</li>
         </ul>
 
