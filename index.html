@@ -366,8 +366,7 @@ print('Hallo world')
             <li>Now we will add the <b>py</b> file we created in the repositary in github by either writing (<b>git add .py</b>) for spesific  file or (<b>git add .</b>) for all files which you created.</li>
             <pre class="python">
                 <code>
-                    git add .py
-                    git add .
+                    git add .py , git add .
                 </code>
             </pre>
             <li>Now we will commit what we added byt ( <b>commit -m "description"</b> )</li>
@@ -401,14 +400,14 @@ print('Hallo world')
     <!-- Slide 10 -->
     <section>
         <h3>What is Git Branching</h3>
-        <p>At the start whe you create a repository it will be your master branch.So when you create a new branch it will have all the files that was in the master class but when you change anything in the new branch it will not affect the master branch.</p>
+        <p>At the start when you create a repository it will be your <b>Master Branch</b>.So when you create a <b>New Branch</b> it will have all the files that was in the <b>Master Branch</b> but when you change anything in the <b>New Branch</b> it will not affect the <b>Master Branch</b>.</p>
     </section>
 
     <!-- Slide 11 -->
     
     <Section>
         <h3>When to use branching?</h3>
-        <p>we will use it when we want to test a new feature but we dont want to it affect the main branch which is master if anything happens. other use is when we want to fix the main(master) brach.</p>
+        <p>We will use it when we want to test a <b>New Feature</b> but we dont want to it affect the main branch which is master if anything happens. other use is when we want to fix the main(master) brach.</p>
     </Section>
     <!-- Slide 12 -->
 
@@ -427,23 +426,64 @@ print('Hallo world')
     </section>
     <!-- Slide 13 -->
     <Section>
-        <h3>Creating a new branch </h3>
+        <h3>Creating a new branch (1)</h3>
         <ul>
-            <li>If you want to check which branch you are in in the terminal write (git branch)</li>
-            <li>To create new branch (git checkout -b "name") name is the name of the beanch</li>
-            <li>To switch between branches (git chechout "name") name is the name of the beanch</li>
-            <li>To check the difference between your branches you can do (git diff "name") name is the name of the branch you want to compare it with the brach you are in.</li>
-            <li>To delete a branch (git branch -d "name")</li>
+            <li>If you want to check which branch you are in in the terminal write (<b>git branch</b>)</li>
+            <pre class="python">
+                <code>
+                    git branch
+                </code>
+            </pre>
+            <li>To create new branch (<b>git checkout -b "name"</b>) <b>name</b> is the name of the beanch</li>
+            <pre class="python">
+                <code>
+                    git checkout -b "name"
+                </code>
+            </pre>
         </ul>
         
     </Section>
+    <h3>Creating a new branch (2)</h3>
+    <ul>
+        <li>To switch between branches (<b>git chechout "name"</b>) <b>name</b>name is the name of the beanch</li>
+        <pre class="python">
+            <code>
+                git chechout "name"
+            </code>
+        </pre>
+        <li>To delete a branch (<b>git branch -d "name"</b>)</li>
+        <pre class="python">
+            <code>
+                git branch -d "name"
+            </code>
+        </pre>
+    </ul>
+    <section>
+    </Section>
+    <h3>Creating a new branch (3)</h3>
+    <ul>
+        <li>To check the difference between your branches you can do (<b>git diff "name"</b>) <b>name</b>name is the name of the branch you want to compare it with the brach you are in.</li>
+        <pre class="python">
+            <code>
+                git diff "name"
+            </code>
+        </pre>
+    </ul>
+    <section>
+
+    </section>
     <!-- slide 14 -->
     <section>
         <h3>How to Merge branches</h3>
         <ul>
-            <li>All you have to do is write (git merge "name") name is the branch you want to merge to.</li>
+            <li>All you have to do is write (<b>git merge "name"</b>) <b>name</b> is the branch you want to merge to.</li>
+            <pre class="python">
+                <code>
+                    git merge "name"
+                </code>
+            </pre>
             <li>But sometimes it give you conflects.</li>
-            <li>if you have a conflect during merging check your code in the IDE or vscode and it wll show you why there was conflect and change it and try merging again or join everying which is not recommended.</li>
+            <li>if you have a conflect during merging check your code in the <b>IDE or vscode</b> and it wll show you why there was <b>conflect</b> and change it and try merging again or join everying which is not recommended.</li>
         </ul>
     </section>
 </section>
