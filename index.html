@@ -83,6 +83,13 @@
             document.getElementsByTagName( 'head' )[0].appendChild( link );
         </script>
 
+        <script>
+            function displayDate() {
+                const today = new Date();
+                const date = today.toDateString();
+                document.getElementById("current-date").innerHTML = date;
+            }
+        </script>
         <!--[if lt IE 9]>
         <script src="lib/js/html5shiv.js"></script>
         <![endif]-->
@@ -99,8 +106,8 @@
 <section>
 <h2>Marketing Analytics</h2>
 <br><br>
-<h4>Garo Bozadjian, AUA</h4>
-
+<h4>Artur Avagyan, AUA</h4>
+<small style="text-align: center;"><span id="current-date"></span></small>
 <h4>Github Tutorial</h3>
 </section>
 
@@ -337,7 +344,7 @@
 import pandas as pd
 import numpy as mp
 
-print('Hallo world')
+print('Hello world')
         </code></pre>
     </section>
     <!-- Slide 6 -->
@@ -434,7 +441,7 @@ print('Hallo world')
                     git branch
                 </code>
             </pre>
-            <li>To create new branch (<b>git checkout -b "name"</b>) <b>name</b> is the name of the beanch</li>
+            <li>To create new branch (<b>git checkout -b "name"</b>) <b>name</b> is the name of the branch</li>
             <pre class="python">
                 <code>
                     git checkout -b "name"
@@ -446,10 +453,10 @@ print('Hallo world')
     <section>
         <h3>Creating a new branch (2)</h3>
     <ul>
-        <li>To switch between branches (<b>git chechout "name"</b>) <b>name</b>name is the name of the beanch</li>
+        <li>To switch between branches (<b>git checkout "name"</b>) <b>name</b>name is the name of the branch</li>
         <pre class="python">
             <code>
-                git chechout "name"
+                git checkout "name"
             </code>
         </pre>
         <li>To delete a branch (<b>git branch -d "name"</b>)</li>
@@ -463,7 +470,7 @@ print('Hallo world')
     <section>
         <h3>Creating a new branch (3)</h3>
     <ul>
-        <li>To check the difference between your branches you can do (<b>git diff "name"</b>) <b>name</b>name is the name of the branch you want to compare it with the brach you are in.</li>
+        <li>To check the difference between your branches you can do (<b>git diff "name"</b>) <b>name</b> is the name of the branch you want to compare it with the brach you are in.</li>
         <pre class="python">
             <code>
                 git diff "name"
@@ -482,7 +489,7 @@ print('Hallo world')
                 </code>
             </pre>
             <li>But sometimes it give you conflects.</li>
-            <li>if you have a conflect during merging check your code in the <b>IDE or vscode</b> and it wll show you why there was <b>conflect</b> and change it and try merging again or join everying which is not recommended.</li>
+            <li>if you have a conflect during merging check your code in the <b>IDE or vscode</b> and it wll show you why there was <b>conflict</b> and change it and try merging again or join everying which is not recommended.</li>
         </ul>
     </section>
 </section>
