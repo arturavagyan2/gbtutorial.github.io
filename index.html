@@ -341,10 +341,10 @@
         <p>Create a py file in the folder wish you just cloned</p>
         
         <pre class="python"><code>
-import pandas as pd
-import numpy as mp
+            import pandas as pd
+            import numpy as np
 
-print('Hello world')
+            print('Hello world')
         </code></pre>
     </section>
     <!-- Slide 6 -->
@@ -373,13 +373,13 @@ print('Hello world')
             <li>Now we will add the <b>py</b> file we created in the repositary in github by either writing (<b>git add .py</b>) for spesific  file or (<b>git add .</b>) for all files which you created.</li>
             <pre class="python">
                 <code>
-                    git add .py , git add .
+                    git add . , git add filename.py
                 </code>
             </pre>
             <li>Now we will commit what we added byt ( <b>commit -m "description"</b> )</li>
             <pre class="python">
                 <code>
-                    commit -m "description"
+                    git commit -m "description"
                 </code>
             </pre>
             <li>-m in the git commit is important because it describes what you have added and why so you have to include it always and descripte what you did in that commit.</li>
@@ -441,10 +441,10 @@ print('Hello world')
                     git branch
                 </code>
             </pre>
-            <li>To create new branch (<b>git checkout -b "name"</b>) <b>name</b> is the name of the branch</li>
+            <li>To create new branch (<b>git checkout -b "branch name"</b>) <b>name</b> is the name of the branch</li>
             <pre class="python">
                 <code>
-                    git checkout -b "name"
+                    git checkout -b "branch name"
                 </code>
             </pre>
         </ul>
@@ -453,16 +453,16 @@ print('Hello world')
     <section>
         <h3>Creating a new branch (2)</h3>
     <ul>
-        <li>To switch between branches (<b>git checkout "name"</b>) <b>name</b>name is the name of the branch</li>
+        <li>To switch between branches (<b>git checkout "branch name"</b>)
         <pre class="python">
             <code>
-                git checkout "name"
+                git checkout "branch name"
             </code>
         </pre>
-        <li>To delete a branch (<b>git branch -d "name"</b>)</li>
+        <li>To delete a branch (<b>git branch -d "branch name"</b>)</li>
         <pre class="python">
             <code>
-                git branch -d "name"
+                git branch -d "branch name"
             </code>
         </pre>
     </ul>
@@ -470,10 +470,10 @@ print('Hello world')
     <section>
         <h3>Creating a new branch (3)</h3>
     <ul>
-        <li>To check the difference between your branches you can do (<b>git diff "name"</b>) <b>name</b> is the name of the branch you want to compare it with the brach you are in.</li>
+        <li>To check the difference between your branches you can do (<b>git diff "branch name"</b>)</li>
         <pre class="python">
             <code>
-                git diff "name"
+                git diff "branch name"
             </code>
         </pre>
     </ul>
@@ -482,10 +482,10 @@ print('Hello world')
     <section>
         <h3>How to Merge branches</h3>
         <ul>
-            <li>All you have to do is write (<b>git merge "name"</b>) <b>name</b> is the branch you want to merge to.</li>
+            <li>All you have to do is write (<b>git merge "branch name"</b>) <b>branch name</b> </li>
             <pre class="python">
                 <code>
-                    git merge "name"
+                    git merge "branch name"
                 </code>
             </pre>
             <li>But sometimes it give you conflects.</li>
@@ -494,7 +494,8 @@ print('Hello world')
     </section>
 </section>
 <!-- GitHub Projects -->
-<section><h2>GitHub Projects</h2> </section>
+<section>
+    <section><h2>GitHub Projects</h2> </section>
     <!-- Slide 15 -->
     <section>
         <h2>What are GitHub Projects?</h2>
@@ -516,10 +517,7 @@ print('Hello world')
           <li><strong>Automation</strong>: Move tasks automatically based on activity</li>
           <li><strong>Real-Time Updates</strong>: Track progress in sync with your repo</li>
         </ul>
-        <p>All your project management in one place!</p>
     </section>
-<section>
-
 </section>
 <section>
     <h2>Thank you</h2>
